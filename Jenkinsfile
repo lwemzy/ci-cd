@@ -4,6 +4,8 @@ node {
     }
 
     stage('Compile-Package') {
+        // get jdk path
+        def jdkHome = tool name: 'java-11', type: 'jdk'
         sh  'mvn package'
     }
 }
