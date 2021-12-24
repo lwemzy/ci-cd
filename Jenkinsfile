@@ -10,7 +10,7 @@ node {
         }
 
         
-            sh 'echo $jdkHome'
+            sh 'echo $jdkHome//usr/lib/jvm/adoptopenjdk-11-hotspot'
             sh  'mvn package'
         
     }
